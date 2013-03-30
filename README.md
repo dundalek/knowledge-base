@@ -4,5 +4,5 @@ This repository contains knowledge represented using KMDoc software. The goal is
 
 You can browse online versions of:
 
-- [Chinese Notes]()
-- [Graph Theory glossary]
+- [Chinese Notes](http://kb.knomaton.org/chinese/out/chinese.html)
+- [Graph Theory glossary](http://kb.knomaton.org/graph-theory/graph-theory.html)
