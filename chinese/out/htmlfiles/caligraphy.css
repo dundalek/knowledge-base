@@ -1,0 +1,24 @@
+@font-face {
+    font-family: cool_font;
+    src: url('wts11.ttf');
+}
+
+.word {
+    float: left;
+}
+
+.chinese {
+   font-family: cool_font;
+   font-size: 140px;
+   margin-bottom: -50px;
+   margin-right: 20px;
+}
+
+* {
+    text-align: center;
+}
+
+/*body {
+    text-align: center;
+    margin: 0 auto;
+}*/

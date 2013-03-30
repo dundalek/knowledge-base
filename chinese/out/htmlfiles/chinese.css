@@ -1,0 +1,22 @@
+dt {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    padding-right: 16px;
+    min-width: 80px;
+}
+
+a.brush {
+    text-decoration: none;
+    display: inline-block;
+    width: 16px;
+    background-image: url("draw-brush.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+}
+
+@media print {
+    a.brush {
+        display: none;
+    }
+}

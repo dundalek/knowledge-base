@@ -1,0 +1,3 @@
+[submodule "components/kmdoc"]
+	path = components/kmdoc
+	url = git://github.com/knomaton/kmdoc.git
