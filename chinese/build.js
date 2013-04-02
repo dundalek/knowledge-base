@@ -2,9 +2,11 @@
 var fs = require('fs'),
     pinyin = require('./pinyin'),
     KMDoc = require('../components/kmdoc'),
-    kmd = KMDoc.create({componentsPath:'../../components/'});
-
-kmd.fileOut = 'out/chinese.html';
+    kmd = KMDoc.create({
+        componentsPath:'../../components/',
+        basename: 'out/chinese',
+        title: 'Chinese notes'
+    });
 
 kmd.preprocess(function() {
     this.input = pinyin(this.input);
