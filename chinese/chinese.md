@@ -4,7 +4,7 @@
 These are notes about chinese language.  
 Hover over a bold definition and action popup will appear. You can click on a speaker icon to hear the pronounciation, a brush icon to see how to write the character or Google and Wikipedia icons to search it on the web.
 
-You can see used [symbols for caligraphy](caligraphy.html) or you can download [flashcards](chinese-flashcards.csv) to use with [Anki](http://ankisrs.net/) (or download [vocabulary](vocabulary.csv) and [phrases](phrases.csv) separately).
+You can see used [symbols for caligraphy](caligraphy.html) or you can download [flashcards](chinese-flashcards.csv) to use with [Anki](http://ankisrs.net/) (or download [vocabulary](vocabulary.csv) and [phrases](phrases.csv) separately). The source code is on [github](https://github.com/knomaton/kmdoc-kb).
 
 
 Other useful links:

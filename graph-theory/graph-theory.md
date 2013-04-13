@@ -1,7 +1,7 @@
 
 # Graph Theory
 
-Here is a glossary of Graph Theory from [Wikipedia](http://en.wiktionary.org/wiki/Appendix:Glossary_of_graph_theory). You can download [flashcards](graph-theory-flashcards.csv) to use with [Anki](http://ankisrs.net/). I also recommend the [GraphBook](https://code.google.com/p/graphbook/) for further studying.
+Here is a glossary of Graph Theory from [Wikipedia](http://en.wiktionary.org/wiki/Appendix:Glossary_of_graph_theory). You can download [flashcards](graph-theory-flashcards.csv) to use with [Anki](http://ankisrs.net/). I also recommend the [GraphBook](https://code.google.com/p/graphbook/) for further studying. The source code is on [github](https://github.com/knomaton/kmdoc-kb).
 
 acyclic
 : Of graph, such one that it does not contain any directed cycle. A finite, acyclic digraph with no isolated vertices necessarily contain at least one source and at least one sink. See also directed acyclic graph (DAG for short) for more.
