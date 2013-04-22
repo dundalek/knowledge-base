@@ -1,0 +1,13 @@
+
+.definition dt {
+    float: none;
+    display: inline-block;
+}
+
+.definition dd {
+    margin-left: 20px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
