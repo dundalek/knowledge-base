@@ -1,5 +1,4 @@
-var kmd = require('../components/kmdoc').create({
-    componentsPath:'../components/',
+var kmd = require('../kmdoc.common').create({
     title: 'JSON Schema'
 });
 

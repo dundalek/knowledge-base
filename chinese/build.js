@@ -1,7 +1,7 @@
 
 var fs = require('fs'),
     pinyin = require('./pinyin'),
-    KMDoc = require('../components/kmdoc'),
+    KMDoc = require('../kmdoc.common'),
     kmd = KMDoc.create({
         componentsPath:'../../components/',
         basename: 'out/chinese',
