@@ -8,9 +8,9 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><a class="brand" href="#">JSON Schema</a><ul class="nav"><li class="divider-vertical"></li><li><a href="../">KMDoc Knowledge Base</a></li></ul><div class="control-toolbar"></div></div></div>
 
-<h1>JSON Schema</h1>
+<h1 id="json-schema">JSON Schema</h1>
 <p>This is an overview of JSON Schema. Sources: <a href="http://json-schema.org/latest/json-schema-core.html">core specification</a>, <a href="http://json-schema.org/latest/json-schema-validation.html">validation specification</a> by Kris Zyp</p>
-<h2>Types</h2>
+<h2 id="types">Types</h2>
 <p>JSON Schema defines seven primitive types for JSON values:</p>
 <div class="definition" id="array"><dt>array</dt><dd>A JSON array.</dd></div>
 
@@ -33,7 +33,7 @@
 <div class="definition" id="string"><dt>string</dt><dd>A JSON string.</dd></div>
 
 
-<h2>Keywords</h2>
+<h2 id="keywords">Keywords</h2>
 <div class="definition" id="schema"><dt>$schema</dt><dd>The &quot;$schema&quot; keyword is both used as a JSON Schema version identifier and the location of a resource which is itself a JSON Schema, which describes any schema written for this particular version.<br>
 This keyword MUST be located at the root of a JSON Schema. The value of this keyword MUST be a URI [RFC3986] and a valid JSON Reference [json‑reference]; this URI MUST be both absolute and normalized. The resource located at this URI MUST successfully describe itself. It is RECOMMENDED that schema authors include this keyword in their schemas.</dd></div>
 
@@ -58,8 +58,8 @@ instance against all constraints in the extending schema as well as
 the extended schema(s).  More optimized implementations that merge
 schemas are possible, but are not required.</dd></div>
 
-<h2>Validation</h2>
-<h3>number and integer</h3>
+<h2 id="validation">Validation</h2>
+<h3 id="number-and-integer">number and integer</h3>
 <div class="definition" id="multipleof"><dt>multipleOf</dt><dd>A numeric instance is valid against &quot;multipleOf&quot; if the result of the division of the instance by this keyword&#39;s value is an integer. The value of &quot;multipleOf&quot; MUST be a JSON number. This number MUST be strictly greater than 0.</dd></div>
 
 
@@ -79,7 +79,7 @@ schemas are possible, but are not required.</dd></div>
 <div class="definition" id="exclusiveminimum"><dt>exclusiveMinimum</dt><dd>If &quot;exclusiveMinimum&quot; is present, &quot;minimum&quot; MUST also be present. The value of &quot;exclusiveMinimum&quot; MUST be a boolean. Default value false.</dd></div>
 
 
-<h3>string</h3>
+<h3 id="string">string</h3>
 <div class="definition" id="maxlength"><dt>maxLength</dt><dd>A string instance is valid against this keyword if its length is less than, or equal to, the value of this keyword. The value of this keyword MUST be an integer. This integer MUST be greater than, or equal to, 0.</dd></div>
 
 
@@ -88,7 +88,7 @@ schemas are possible, but are not required.</dd></div>
 
 <div class="definition" id="pattern"><dt>pattern</dt><dd>A string instance is considered valid if the regular expression matches the instance successfully. Recall: regular expressions are not implicitly anchored. The value of this keyword MUST be a string. This string SHOULD be a valid regular expression, according to the ECMA 262 regular expression dialect.</dd></div>
 
-<h3>array</h3>
+<h3 id="array">array</h3>
 <div class="definition" id="items"><dt>items</dt><dd>if &quot;items&quot; is not present, or its value is an object, validation of the instance always succeeds, regardless of the value of &quot;additionalItems&quot;; if the value of &quot;additionalItems&quot; is boolean value true or an object, validation of the instance always succeeds; if the value of &quot;additionalItems&quot; is boolean value false and the value of &quot;items&quot; is an array, the instance is valid if its size is less than, or equal to, the size of &quot;items&quot;. The value of &quot;items&quot; MUST be either an object or an array. If it is an object, this object MUST be a valid JSON Schema. If it is an array, items of this array MUST be objects, and each of these objects MUST be a valid JSON Schema. Default is considered as an empty schema.</dd></div>
 
 
@@ -103,7 +103,7 @@ schemas are possible, but are not required.</dd></div>
 
 <div class="definition" id="uniqueitems"><dt>uniqueItems</dt><dd>If this keyword has boolean value false, the instance validates successfully. If it has boolean value true, the instance validates successfully if all of its elements are unique. The value of this keyword MUST be a boolean. Default value false.</dd></div>
 
-<h3>object</h3>
+<h3 id="object">object</h3>
 <div class="definition" id="maxproperties"><dt>maxProperties</dt><dd>An object instance is valid against &quot;maxProperties&quot; if its number of properties is less than, or equal to, the value of this keyword. The value of this keyword MUST be an integer. This integer MUST be greater than, or equal to, 0.</dd></div>
 
 
@@ -130,7 +130,7 @@ This keyword&#39;s value MUST be an object. Each value of this object MUST be ei
 If the value is an object, it MUST be a valid JSON Schema. This is called a schema dependency.
 If the value is an array, it MUST have at least one element. Each element MUST be a string, and elements in the array MUST be unique. This is called a property dependency.</dd></div>
 
-<h3>Any instance type</h3>
+<h3 id="any-instance-type">Any instance type</h3>
 <div class="definition" id="enum"><dt>enum</dt><dd>An instance validates successfully against this keyword if its value is equal to one of the elements in this keyword&#39;s array value.
 The value of this keyword MUST be an array. This array MUST have at least one element. Elements in the array MUST be unique.
 Elements in the array MAY be of any type, including null.</dd></div>
@@ -162,7 +162,7 @@ This keyword&#39;s value MUST be an object. This object MUST be a valid JSON Sch
 
 <div class="definition" id="definitions"><dt>definitions</dt><dd>This keyword plays no role in validation per se. Its role is to provide a standardized location for schema authors to inline JSON Schemas into a more general schema. This keyword&#39;s value MUST be an object. Each member value of this object MUST be a valid JSON Schema.</dd></div>
 
-<h3>Metadata</h3>
+<h3 id="metadata">Metadata</h3>
 <div class="definition" id="title"><dt>title</dt><dd>The value MUST be a string. It MAY be used in root schemas, and in any subschemas.</dd></div>
 
 
@@ -173,11 +173,11 @@ This keyword&#39;s value MUST be an object. This object MUST be a valid JSON Sch
 This keyword MAY be used in root schemas, and in any subschemas.
 There are no restrictions placed on the value of this keyword.</dd></div>
 
-<h3>Format</h3>
+<h3 id="format">Format</h3>
 <div class="definition" id="format"><dt>format</dt><dd>Structural validation alone may be insufficient to validate that an instance meets all the requirements of an application. The &quot;format&quot; keyword is defined to allow interoperable semantic validation for a fixed subset of values which are accurately described by authoritative resources, be they RFCs or other external specifications.
 The value of this keyword is called a format attribute. It MUST be a string. A format attribute can generally only validate a given set of instance types. If the type of the instance to validate is not in this set, validation for this format attribute and instance SHOULD succeed.</dd></div>
 
-<h4>Defined attibutes</h4>
+<h4 id="defined-attibutes">Defined attibutes</h4>
 <div class="definition" id="date-time"><dt>date-time</dt><dd>A string instance is valid against this attribute if it is a valid date representation as defined by RFC 3339, section 5.6 [RFC3339]. This attribute applies to string instances.</dd></div>
 
 
@@ -196,17 +196,17 @@ The value of this keyword is called a format attribute. It MUST be a string. A f
 <div class="definition" id="uri"><dt>uri</dt><dd>A string instance is valid against this attribute if it is a valid URI, according to [RFC3986]. This attribute applies to string instances.</dd></div>
 
 
-<h2>JSON Hypermedia</h2>
+<h2 id="json-hypermedia">JSON Hypermedia</h2>
 <p><a href="http://json-schema.org/latest/json-schema-hypermedia.html">specification</a></p>
 <p>describes how JSON Schema can be used to define hyperlinks on instance data. It also defines how to provide additional information required to interpret JSON data as rich multimedia documents.</p>
 <div class="definition" id="readonly"><dt>readOnly</dt><dd>If it has a value of boolean true, this keyword indicates that the instance property SHOULD NOT be changed, and attempts by a user agent to modify the value of this property are expected to be rejected by a server.
 The value of this keyword MUST be a boolean. The default value is false.</dd></div>
 
 
-<div class="definition" id="pathstart"><dt>pathStart</dt><dd>his property is a URI that defines what the instance&#39;s URI MUST start with in order to validate. The value of the &quot;pathStart&quot; property MUST be resolved relative to the closest URI Resolution Scope (as defined in the core specification [FIXME link]), using the rules from RFC 3986, Sec 5 [RFC3986].
+<div class="definition" id="pathstart"><dt>pathStart</dt><dd>this property is a URI that defines what the instance&#39;s URI MUST start with in order to validate. The value of the &quot;pathStart&quot; property MUST be resolved relative to the closest URI Resolution Scope (as defined in the core specification [FIXME link]), using the rules from RFC 3986, Sec 5 [RFC3986].
 When multiple schemas have been referenced for an instance, the user agent can determine if this schema is applicable for a particular instance by determining if the URI of the instance begins with the the value of the &quot;pathStart&quot; property. If the URI of the instance does not start with this URI, or if another schema specifies a starting URI that is longer and also matches the instance, this schema SHOULD NOT be considered to describe the instance. Any schema that does not have a pathStart property SHOULD be considered applicable to all the instances for which it is referenced.</dd></div>
 
-<h3>Links</h3>
+<h3 id="links">Links</h3>
 <div class="definition" id="links"><dt>links</dt><dd>The &quot;links&quot; property of schemas is used to associate Link Description Objects with instances. The value of this property MUST be an array, and the items in the array must be Link Description Objects, as defined below.</dd></div>
 
 <p>Example:</p>
@@ -221,8 +221,8 @@ When multiple schemas have been referenced for an instance, the user agent can d
             &quot;href&quot;: &quot;{parent}&quot;
         }
     ]
-}</code></pre>
-<h4>Link Description Object (LDO)</h4>
+}
+</code></pre><h4 id="link-description-object-ldo-">Link Description Object (LDO)</h4>
 <div class="definition" id="href"><dt>href</dt><dd>The value of the &quot;href&quot; link description property is a template used to determine the target URI of the related resource. The value of the instance property SHOULD be resolved as a URI-Reference per RFC 3986 [RFC3986] and MAY be a relative reference to a URI. The base URI to be used for relative URI resolution SHOULD be the URI used to retrieve the instance object (not the schema).
 The base URI to be used for relative URI resolution SHOULD is defined as follows:
 if the data has a link defined, with a relation of &quot;self&quot;, then the &quot;href&quot; value of that link is used, unless the relation of the link being resolved is also &quot;self&quot;
@@ -258,7 +258,7 @@ User agents MAY use this title when presenting the link to the user.</dd></div>
 
 <div class="definition" id="mediatype"><dt>mediaType</dt><dd>The value of this property is advisory only, and represents the media type RFC 2046 [RFC2046], that is expected to be returned when fetching this resource. This property value MAY be a media range instead, using the same pattern defined in RFC 2161, section 14.1 - HTTP &quot;Accept&quot; header [RFC2616]. If this property&#39;s value is not specified, then the value should be taken to be &quot;application/json&quot;.</dd></div>
 
-<h4>Submission Link Properties</h4>
+<h4 id="submission-link-properties">Submission Link Properties</h4>
 <div class="definition" id="method"><dt>method</dt><dd>This property defines which method can be used to access the target resource. In an HTTP environment, this might be &quot;GET&quot; or &quot;POST&quot; (or other HTTP methods).
 Some link relation values imply a set of appropriate HTTP methods to be used for the link. For example, a client might assume that a link with a relation of &quot;edit&quot; can be used in conjuction with the &quot;PUT&quot; HTTP method. If the client does not know which methods might be appropriate, then this SHOULD default to &quot;GET&quot;.</dd></div>
 
@@ -269,7 +269,7 @@ Some link relation values imply a set of appropriate HTTP methods to be used for
 <div class="definition" id="schema-2"><dt>schema</dt><dd>This property contains a schema which defines the acceptable structure of the submitted request. For a GET request, this schema would define the properties for the query string and for a POST request, this would define the body.
 Note that this is separate from the URI templating of &quot;href&quot; (which uses data from the instance, not submitted by the user). It is also separate from the &quot;targetSchema&quot; property, which provides a schema for the data that the client should expect to be returned when they follow the link.</dd></div>
 
-<h3>Media</h3>
+<h3 id="media">Media</h3>
 <div class="definition" id="media"><dt>media</dt><dd>The &quot;media&quot; property indicates that this instance contains non-JSON data encoded in a JSON string. It describes the type of content and how it is encoded.
 The value of this property MUST be an object, and SHOULD be ignored for any instance that is not a string.</dd></div>
 
@@ -286,17 +286,14 @@ The value of this property MUST be an object, and SHOULD be ignored for any inst
             }
         }
     }
-}</code></pre>
-<h4>Properties</h4>
+}
+</code></pre><h4 id="properties">Properties</h4>
 <p>The value of the &quot;media&quot; keyword MAY contain any of the following properties:</p>
 <div class="definition" id="binaryencoding"><dt>binaryEncoding</dt><dd>If the instance value is a string, this property defines that the string SHOULD be interpreted as binary data and decoded using the encoding named by this property. RFC 2045, Sec 6.1 [RFC2045] lists the possible values for this property.</dd></div>
 
 
 <div class="definition" id="type-2"><dt>type</dt><dd>The value of this property must be a media type, as defined by RFC 2046 [RFC2046]. This property defines the media type of instances which this schema defines.
 If the &quot;binaryEncoding&quot; property is not set, but the instance value is a string, then the value of this property SHOULD specify a text document type, and the character set SHOULD be the character set into which the JSON string value was decoded (for which the default is Unicode).</dd></div>
-
-
-
 
 
 </body>
