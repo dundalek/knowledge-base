@@ -2,7 +2,7 @@ var kmd = require('../kmdoc.common').create({
     title: 'JSON Schema'
 });
 
-kmd.use('recall', /*'autolink',*/ 'tooltip', 'search', 'toc', 'shortsource');
+kmd.use('recall', 'autolink', 'tooltip', 'search', 'toc', 'shortsource');
 
 kmd.addStyle('style.css');
 kmd.addScript('custom.js');
