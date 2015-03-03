@@ -8,4 +8,4 @@ You can browse online versions of:
 - [Graph Theory glossary](http://kb.knomaton.org/graph-theory/graph-theory.html)
 - [JSON Schema rererence](http://kb.knomaton.org/json-schema/)
 
-The source code for knowledge files are on github at [kmdoc-kb](https://github.com/knomaton/kmdoc-kb), software source code is at [kmdoc](https://github.com/knomaton/kmdoc) repository.
+Check out the source code of the [knowledge files](https://github.com/dundalek/knowledge-base) and  [kmdoc](https://github.com/dundalek/kmdoc) which powers this site.
