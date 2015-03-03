@@ -55,7 +55,7 @@ kmd.postprocess(function() {
             };
         });
 
-    fs.writeFileSync('out/caligraphy.html', KMDoc.template(tmpl, {words: caligraphy}));
+    fs.writeFileSync('out/caligraphy.html', KMDoc.template(tmpl)({words: caligraphy}));
 });
 
 kmd.build();
