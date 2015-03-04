@@ -31,7 +31,7 @@
 	    return '';
 	}
 
-	var tmpl = _.template('<span title="Play audio of pronunciation" data-tts="<%-name%>" class="snd"></span>');
+	var tmpl = KMDoc.modules.tts.options.template;
 
 	function defText(def) {
 		var t = def.name;
@@ -45,7 +45,6 @@
 	}
 
 	KMDoc.modules.tts.options.template = defText;
-    KMDoc.modules.tts.options.lang = 'zh-CN';
-	
+  KMDoc.modules.tts.options.lang = 'zh-CN';
 
 })();
