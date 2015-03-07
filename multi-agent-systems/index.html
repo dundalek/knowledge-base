@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>Multi-Agent Systems</title><link rel="stylesheet" href="../components/bootstrap/css/bootstrap.css"/><link rel="stylesheet" href="../components/kmdoc/assets/css/style.css"/><link rel="stylesheet" href="../components/kmdoc/assets/jquery-bootstrap/jquery-ui-1.9.2.custom.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="../components/jquery-ui/ui/jquery-ui.js"></script><script src="../components/underscore/underscore.js"></script><script src="../components/kmdoc/assets/js/main.js"></script><link rel="stylesheet" href="../components/kmdoc/assets/css/toc.css"/><script src="../components/kmdoc/assets/libs/jquery.toc.js"></script><script>$(function() {$("body").append("<div id=\"toc\"></div>").css("margin-right", 160); $("#toc").css("right", 0).toc({offset:-40});});</script><script src="../components/kmdoc/assets/js/tooltip.js"></script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="../components/kmdoc/assets/js/recall.js"></script><script src="../components/kmdoc/assets/js/autolink.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/Among.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/SnowballProgram.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/ext/EnglishStemmer.js"></script><script>KMDoc.modules.autolink.options.stem = (function() {var stemmer = new EnglishStemmer(); return function(str) {stemmer.setCurrent(str.toLowerCase()); stemmer.stem(); return stemmer.getCurrent();}})(); </script><script src="../components/kmdoc/assets/libs/latinize/latinize.js"></script><script src="../components/kmdoc/assets/js/search.js"></script><script>KMDoc.definitionsUrl = "index-definitions.json";</script>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><a class="brand" href="#">Multi-Agent Systems</a><ul class="nav"><li class="divider-vertical"></li><li><a href="../">KMDoc Knowledge Base</a></li></ul><div class="control-toolbar"></div></div></div>
+
+<h1 id="multi-agent-systems">Multi-Agent Systems</h1>
+<p>These are notes taken in <a href="https://cw.fel.cvut.cz/wiki/courses/ae4m36mas/start">Multiagent Systems class (AE4M36MAS)</a> taught at <a href="https://www.fel.cvut.cz/en">CTU FEE</a>.</p>
+<div class="definition" id="multiagent-system"><dt>Multiagent system</dt><dd>is a collection of multiple autonomous agents, each acting towards its objectives while all interacting in a shared environment, being able to communicate and possibly coordinate their actions.</dd></div>
+
+
+<div class="definition" id="agent"><dt>Agent</dt><dd>[Russell &amp; Norvig] An agent is anything that can perceive its environment (through its sensors) and act upon that environment (through its effectors).<br>[Wooldridge &amp; Jennings] An agent is a computer system that is situated in some environment, and that is capable of autonomous action in this environment in order to meet its design objectives/delegated goals.</dd></div>
+
+<h3 id="autonomous-agent-properties">Autonomous Agent Properties</h3>
+<div class="definition" id="autonomous"><dt>autonomous</dt><dd>the agent is self goal-directed and acts without requiring user initiation and guidance; it can choose its own goal and the way to achieve it; its behavior is determined by its experience; we have no direct control over it</dd></div>
+
+
+<div class="definition" id="reactive"><dt>reactive</dt><dd>the agent maintains an ongoing interaction with its environment, and responds to changes that occur in it</dd></div>
+
+
+<div class="definition" id="proactive"><dt>proactive</dt><dd>the agent generates and attempts to achieve goals; it is not driven solely by events but takes the initiative</dd></div>
+
+
+<div class="definition" id="sociable"><dt>sociable</dt><dd>the agent interacts with other agents (and possibly humans) via cooperation, coordination, and negotiation; it is aware and able to reason about other agents and how they can help it achieve its own goals</dd></div>
+
+
+<div class="definition" id="coordination"><dt>coordination</dt><dd>is managing the interdependencies between actions of multiple agents (not necessarily cooperative)</dd></div>
+
+
+<div class="definition" id="cooperation"><dt>cooperation</dt><dd>is working together as a team to achieve a shared goal</dd></div>
+
+
+<div class="definition" id="negotiation"><dt>negotiation</dt><dd>is the ability to reach agreements on matters of common interest</dd></div>
+
+<ul>
+<li>An agent has unpredictable behaviour as observed from the
+outside, unless its simple reflexive agent.</li>
+<li>An agent is situated in the environment.</li>
+<li>Agent communication model is asynchronous.</li>
+<li>Objects do it for free; agents do it because they want to.</li>
+</ul>
+<h3 id="types-of-agent-systems">Types of Agent Systems</h3>
+<ul>
+<li>single-agent</li>
+<li>multi-agent<ul>
+<li>cooperative - single shared utility</li>
+<li>competetive - multiple different utilities</li>
+</ul>
+</li>
+</ul>
+<h3 id="agent-behavior">Agent Behavior</h3>
+<div class="definition" id="agent-function"><dt>Agent function</dt><dd>Agent’s behavior is described by the agent function that maps percept sequences to actions.</dd></div>
+
+
+<div class="definition" id="agent-program"><dt>Agent program</dt><dd>runs on a physical architecture to produce agent function.</dd></div>
+
+
+<div class="definition" id="rational-agent"><dt>Rational agent</dt><dd>chooses whichever action maximizes the expected value of the performance measure given the percept sequence to date and whatever bulit-in knowledge the agent has.</dd></div>
+
+<p>To design a rational agent, we must specify the task environment (PEAS).</p>
+<div class="definition" id="task-environment"><dt>Task environment (PEAS)</dt><dd>Performance measure, Environment,  Actuators, Sensors</dd></div>
+
+<h3 id="properties-of-environments">Properties of Environments</h3>
+<div class="definition" id="fully-observable-vs-partially-observable"><dt>Fully observable vs. partially observable</dt><dd>can agents obtain complete and correct information about the state of the world?</dd></div>
+
+
+<div class="definition" id="deterministic-vs-stochastic"><dt>Deterministic vs. stochastic</dt><dd>Do actions have guaranteed and uniquely defined effects?</dd></div>
+
+
+<div class="definition" id="episodic-vs-sequential"><dt>Episodic vs. sequential</dt><dd>Can agents decisions be made for different, independent episodes?</dd></div>
+
+
+<div class="definition" id="static-vs-dynamic"><dt>Static vs. dynamic</dt><dd>Does the environment change by processes beyond agent control?</dd></div>
+
+
+<div class="definition" id="discrete-vs-continuous"><dt>Discrete vs. continuous</dt><dd>Is the number of actions and percepts fixed and finite?</dd></div>
+
+
+<div class="definition" id="single-agent-vs-multi-agent"><dt>Single-agent vs. multi-agent</dt><dd>Does the behavior of one agent depends on the behavior of other agents?</dd></div>
+
+<h3 id="hierarchy-of-agents">Hierarchy of Agents</h3>
+<p>There is a link between the complexity of the task and the
+minimum agent architecture required to implement a rational
+agent.</p>
+<p>Basic types of agents in the order of increasing capability:</p>
+<ol>
+<li>simple reflex agents</li>
+<li>model-based agents with state</li>
+<li>goal-based agents</li>
+<li>utility-based agents</li>
+<li>(learning agents)</li>
+</ol>
+<div class="definition" id="simple-reflex-agents"><dt>Simple Reflex Agents</dt><dd>chooses the next action on the basis of the current percept only.</dd></div>
+
+<p>Reflex agents are simple but of limited intelligence – they only work if</p>
+<ol>
+<li>the environment is fully observable and</li>
+<li>the decision can be made based solely on the current percept</li>
+</ol>
+<p>If the above not the case =&gt; suboptimal action choices, infinite loops.</p>
+<div class="definition" id="model-based-reflex-agent"><dt>Model-based Reflex Agent</dt><dd>Keeps track of the world by extracting relevant information from percepts and storing it in its memory.</dd></div>
+
+<ul>
+<li>whats and hows tightly coupled (impossible to tell the agent what to do)</li>
+<li>the agent does not anticipate the effects of its actions (only finds out the result after having executed the action)</li>
+</ul>
+<div class="definition" id="goal-based-agents"><dt>Goal-based Agents</dt><dd>Goal-based agents are more flexible, they use search and planning.</dd></div>
+
+<p>Goals alone are not sufficient for decision making:</p>
+<ol>
+<li>there may be multiple ways of achieving them;</li>
+<li>agents may have several conflicting goals that cannot be achieved simultaneously.</li>
+</ol>
+<div class="definition" id="utility-based-agents"><dt>Utility-based Agents</dt><dd>use the utility function to choose the most desirable action/course of actions to take.</dd></div>
+
+<p>Uses optimizing planning - searches for the plan that leads to the maximum utility.
+There are still issues:</p>
+<ul>
+<li>irreducible preference orderings</li>
+<li>non-deterministic environment (Markov decision processes)</li>
+</ul>
+<div class="definition" id="utility"><dt>Utility</dt><dd>is a function that maps a state onto a real number; it captures “quality” of a state. If an agent prefers one world state to another state then the former state has higher utility for the agent.</dd></div>
+
+<p>Utility can be used for:</p>
+<ol>
+<li>choosing the best plan</li>
+<li>resolving conflicts among goals</li>
+<li>estimating the successfulness of an agent if the outcomes of actions are uncertain.</li>
+</ol>
+<h3 id="summary">Summary</h3>
+<div class="definition" id="intelligent-agent"><dt>Intelligent agent</dt><dd>is autonomous, proactive, reactive and sociable.</dd></div>
+
+<p>Agents can be cooperative or competitive (or combination thereof).</p>
+<p>There are different agent architectures with different capabilities and complexity.</p>
+<h2 id="auctions">Auctions</h2>
+<div class="definition" id="auction"><dt>Auction</dt><dd>mechanism for allocating resource among self-interested agents<br>[Shoham &amp; Leyton-Brown 2009] An auction is a protocol that allows agents (=bidders) to indicate their interests in one or more resources and that uses these indications of interest to determine both an allocation of resources and a set of payments by the agents.</dd></div>
+
+<h3 id="auctions-rules">Auctions Rules</h3>
+<p>Auction mechanism is specified by auction rules.</p>
+<div class="definition" id="bidding-rules"><dt>Bidding rules</dt><dd>How offers are made: by whom, when, what their content is</dd></div>
+
+
+<div class="definition" id="clearing-rules"><dt>Clearing rules</dt><dd>Who gets which goods (allocation) and what money changes hands (payment).</dd></div>
+
+
+<div class="definition" id="information-rules"><dt>Information rules</dt><dd>What information about the state of the negotiation is revealed to whom and when.</dd></div>
+
+<h3 id="valuation-models">Valuation Models</h3>
+<div class="definition" id="common-value"><dt>Common value</dt><dd>the good has the same value to all agents example: a 100 dollar note</dd></div>
+
+
+<div class="definition" id="private-value"><dt>Private value</dt><dd>an agent A’s valuation of the good is independent from other agent’s valuation of the good example: a painting, John Lennon’s last dollar bill</dd></div>
+
+
+<div class="definition" id="correlated-value"><dt>Correlated value</dt><dd>valuations of the good are related, i.e. the more other agents are prepared to pay, the more agent A prepared to pay. example: purchase of items for later resale</dd></div>
+
+
+<div class="definition" id="agent-s-payoff-from-participating-in-an-auction"><dt>Agent’s payoff from participating in an auction</dt><dd>if winner: payoff = item’s valuation – price paid for the item; if not winner: payoff = zero</dd></div>
+
+<h3 id="auction-types">Auction types</h3>
+<div class="definition" id="single-good-auctions"><dt>Single Good Auctions</dt><dd>auction of one item</dd></div>
+
+
+<div class="definition" id="multi-unit-auctions"><dt>Multi-Unit Auctions</dt><dd>multiple units of the same item are available for auction</dd></div>
+
+
+<div class="definition" id="multi-item-auctions"><dt>Multi-Item Auctions</dt><dd>bidding for multiple items grouped together</dd></div>
+
+
+<div class="definition" id="reverse-auctions"><dt>Reverse Auctions</dt><dd>The buyer issues a request for bids to his providers.</dd></div>
+
+
+<div class="definition" id="multi-attribute-auctions"><dt>Multi-Attribute Auctions</dt><dd>Negotiation over further attributes beyond price, e.g. color, weight, or delivery time</dd></div>
+
+<h3 id="single-item-auctions-basic-auction-mechanisms">Single-Item Auctions - Basic Auction Mechanisms</h3>
+<p>English
+Japanese
+Dutch
+First-Price
+Second-Price</p>
+<div class="definition" id="english-auction"><dt>English Auction</dt><dd>Auctioneer starts the bidding at some reservation price. Bidders then shout out ascending prices (minimum increments). Once bidders stop shouting, the high bidder gets the good at that price.</dd></div>
+
+
+<div class="definition" id="japanese-auction"><dt>Japanese Auction</dt><dd>Same as an English auction except that the auctioneer calls out the prices<br>All bidders start out standing. When the price reaches a level that a bidder is not willing to pay, that bidder sits down. Once a bidder sits down, they can&#39;t get back up the last person standing gets the good.</dd></div>
+
+
+<div class="definition" id="dutch-auction"><dt>Dutch Auction</dt><dd>The auctioneer starts ahigh value; it descends clock at some. At some point, a bidder shouts “mine!&quot; and gets the good at the price shown on the clock. Good when items need to be sold quickly (similar to Japanese auction) No information is given away during auction.</dd></div>
+
+
+<div class="definition" id="first-price-sealed-bid-auction"><dt>First-price sealed bid auction</dt><dd>Bidders write down bids on pieces of paper. Suctioneer awards the good to the bidder with the highest bid. That bidder pays the amount of his bid.</dd></div>
+
+
+<div class="definition" id="second-price-sealed-bid-auction"><dt>Second-price sealed bid auction</dt><dd>Same as First-price sealed bid auction except winner pays the amount bid by the second-highest bidder alias: Vickerey auction</dd></div>
+
+<h3 id="analysing-auctions">Analysing Auctions</h3>
+<p>(Desired) Properties</p>
+<p>Strategy: existence of dominant strategy</p>
+<p>Truthfulness: bidders are incentivized to bid their true valuations</p>
+<p>Efficiency (Pareto-optimality): the aggregated utility, measured as the sum of valuations, is maximized</p>
+<p>Optimality: maximization of seller’s revenue</p>
+<p>Manipulation vulnerability: Lying auctioner, Shills, Bidder collusion</p>
+<p>Other consideration: communication complexity, private information revelation, ...</p>
+<h3 id="dutch-and-first-price-sealed-bid">Dutch and First-price Sealed Bid</h3>
+<p>Strategically equivalent: an agent bids without knowing about the other agents’ bids -  a bidder must decide on the amount he&#39;s willing to pay, conditional on having placed the highest bid</p>
+<p>Differences</p>
+<ul>
+<li>First-price auctions can be held asynchronously</li>
+<li>Dutch auctions are fast, and require minimal communication</li>
+</ul>
+
+
+</body>
+</html>

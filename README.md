@@ -6,6 +6,7 @@ You can browse online versions of:
 
 - [Chinese Notes](http://kb.knomaton.org/chinese/out/chinese.html)
 - [Graph Theory glossary](http://kb.knomaton.org/graph-theory/graph-theory.html)
+- [Multi-Agent Systems](http://kb.knomaton.org/multi-agent-systems/)
 - [JSON Schema rererence](http://kb.knomaton.org/json-schema/)
 
 Check out the source code of the [knowledge files](https://github.com/dundalek/knowledge-base) and  [kmdoc](https://github.com/dundalek/kmdoc) which powers this site.
