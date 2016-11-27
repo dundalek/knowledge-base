@@ -1,1 +1,369 @@
-{"depth":1,"lines":[1,2],"name":"Automatické uvažování","children":[{"depth":2,"lines":[7,8],"name":"Úvod","children":[{"name":"Pozorování","textId":"pozorovani","isDefinition":true},{"name":"Uvažování","textId":"uvazovani","isDefinition":true},{"name":"Logika","textId":"logika","isDefinition":true},{"name":"Syntaxe","textId":"syntaxe","isDefinition":true},{"name":"Sémantika","textId":"semantika","isDefinition":true},{"name":"Korektnost","textId":"korektnost","isDefinition":true},{"name":"nekonzistentní systémy","textId":"nekonzistentni-systemy","isDefinition":true},{"name":"neúplné systémy","textId":"neuplne-systemy","isDefinition":true},{"name":"Russelův paradox","textId":"russeluv-paradox","isDefinition":true},{"name":"Gödelova věta","textId":"godelova-veta","isDefinition":true},{"name":"Algoritmus Britského muzea","textId":"algoritmus-britskeho-muzea","isDefinition":true},{"name":"Automatické uvažování","textId":"automaticke-uvazovani","isDefinition":true},{"name":"Automatické dokazování","textId":"automaticke-dokazovani","isDefinition":true},{"name":"Kontrola modelů","textId":"kontrola-modelu","isDefinition":true},{"name":"Hledání modelů","textId":"hledani-modelu","isDefinition":true},{"name":"Interaktivní systémy","textId":"interaktivni-systemy","isDefinition":true},{"name":"Automatické systémy","textId":"automaticke-systemy","isDefinition":true}],"textId":"uvod"},{"depth":2,"lines":[68,69],"name":"Rezoluční kalkulus pro výrokovou logiku","children":[{"name":"Interpretace","textId":"interpretace","isDefinition":true},{"name":"Model","textId":"model","isDefinition":true},{"name":"Sémantický důsledek","textId":"semanticky-dusledek","isDefinition":true},{"name":"Tautologie","textId":"tautologie","isDefinition":true},{"name":"Kontradikce","textId":"kontradikce","isDefinition":true},{"name":"Sporná množina","textId":"sporna-mnozina","isDefinition":true},{"name":"Logický kalkulus","textId":"logicky-kalkulus","isDefinition":true},{"name":"Důkaz","textId":"dukaz","isDefinition":true},{"name":"Dokazatelnost","textId":"dokazatelnost","isDefinition":true},{"name":"Hilbertův implikativní kalkulus pro výrokovou logiku","textId":"hilbertuv-implikativni-kalkulus-pro-vyrokovou-logiku","isDefinition":true},{"name":"Korektnost logického kalkulu","textId":"korektnost-logickeho-kalkulu","isDefinition":true},{"name":"Úplnost logického kalkulu","textId":"uplnost-logickeho-kalkulu","isDefinition":true},{"name":"Rezoluční kalkulus","textId":"rezolucni-kalkulus","isDefinition":true},{"name":"Literál","textId":"literal","isDefinition":true},{"name":"Klauzule","textId":"klauzule","isDefinition":true},{"name":"Prázdná klauzule","textId":"prazdna-klauzule","isDefinition":true},{"name":"Věta (o úplnosti rezolučního kalkulu)","textId":"veta-o-uplnosti-rezolucniho-kalkulu","isDefinition":true},{"name":"Metoda důkazu sporem","textId":"metoda-dukazu-sporem","isDefinition":true},{"name":"Strategie aplikace rezolučního pravidla","textId":"strategie-aplikace-rezolucniho-pravidla","isDefinition":true},{"name":"Optimalizace konverze na CNF","textId":"optimalizace-konverze-na-cnf","isDefinition":true},{"name":"Subsumpce","textId":"subsumpce","isDefinition":true},{"name":"Subsumpce v rezoluci","textId":"subsumpce-v-rezoluci","isDefinition":true},{"name":"Dopředná subsumpce","textId":"dopredna-subsumpce","isDefinition":true},{"name":"Zpětná subsumpce","textId":"zpetna-subsumpce","isDefinition":true},{"name":"Uspořádaná rezoluce","textId":"usporadana-rezoluce","isDefinition":true},{"name":"Kvaziuspořádání","textId":"kvaziusporadani","isDefinition":true},{"name":"Lineární uspořádání","textId":"linearni-usporadani","isDefinition":true},{"name":"Úplnost uspořádané rezoluce","textId":"uplnost-usporadane-rezoluce","isDefinition":true}],"textId":"rezolucni-kalkulus-pro-vyrokovou-logiku"},{"depth":2,"lines":[215,216],"name":"Rezoluční kalkulus pro logiku prvního řádu","textId":"rezolucni-kalkulus-pro-logiku-prvniho-radu"},{"depth":2,"lines":[217,218],"name":"Tableaux metody","children":[{"depth":3,"lines":[239,240],"name":"Tableau pravidla pro predikátovou logiku","children":[{"name":"konjuknce","textId":"konjuknce","isDefinition":true},{"name":"disjunkce","textId":"disjunkce","isDefinition":true},{"name":"negace","textId":"negace","isDefinition":true},{"name":"univerzální kvantifikace","textId":"univerzalni-kvantifikace","isDefinition":true},{"name":"existenční kvantifikace","textId":"existencni-kvantifikace","isDefinition":true},{"name":"uzavření větve","textId":"uzavreni-vetve","isDefinition":true},{"name":"uzavřené tableau","textId":"uzavrene-tableau","isDefinition":true},{"name":"LeanTAP","textId":"leantap","isDefinition":true}],"textId":"tableau-pravidla-pro-predikatovou-logiku"},{"name":"Tableau metoda","textId":"tableau-metoda","isDefinition":true},{"name":"Negation normal form","textId":"negation-normal-form","isDefinition":true}],"textId":"tableaux-metody"},{"depth":2,"lines":[274,275],"name":"DPLL a metody pro SAT","children":[{"name":"SAT","textId":"sat","isDefinition":true},{"name":"DPLL","textId":"dpll","isDefinition":true},{"name":"unit clause","textId":"unit-clause","isDefinition":true},{"name":"unit propagation","textId":"unit-propagation","isDefinition":true},{"name":"pure výskyt","textId":"pure-vyskyt","isDefinition":true},{"name":"pure literal elimination","textId":"pure-literal-elimination","isDefinition":true},{"name":"MiniSat","textId":"minisat","isDefinition":true},{"name":"MiniSat – analýza konfliktu","textId":"minisat-analyza-konfliktu","isDefinition":true}],"textId":"dpll-a-metody-pro-sat"}],"textId":"automaticke-uvazovani"}
+{
+  "depth": 1,
+  "line": 1,
+  "name": "Automatické uvažování",
+  "children": [
+    {
+      "depth": 2,
+      "line": 7,
+      "name": "Úvod",
+      "children": [
+        {
+          "name": "Pozorování",
+          "textId": "pozorovani",
+          "isDefinition": true
+        },
+        {
+          "name": "Uvažování",
+          "textId": "uvazovani",
+          "isDefinition": true
+        },
+        {
+          "name": "Logika",
+          "textId": "logika",
+          "isDefinition": true
+        },
+        {
+          "name": "Syntaxe",
+          "textId": "syntaxe",
+          "isDefinition": true
+        },
+        {
+          "name": "Sémantika",
+          "textId": "semantika",
+          "isDefinition": true
+        },
+        {
+          "name": "Korektnost",
+          "textId": "korektnost",
+          "isDefinition": true
+        },
+        {
+          "name": "nekonzistentní systémy",
+          "textId": "nekonzistentni-systemy",
+          "isDefinition": true
+        },
+        {
+          "name": "neúplné systémy",
+          "textId": "neuplne-systemy",
+          "isDefinition": true
+        },
+        {
+          "name": "Russelův paradox",
+          "textId": "russeluv-paradox",
+          "isDefinition": true
+        },
+        {
+          "name": "Gödelova věta",
+          "textId": "godelova-veta",
+          "isDefinition": true
+        },
+        {
+          "name": "Algoritmus Britského muzea",
+          "textId": "algoritmus-britskeho-muzea",
+          "isDefinition": true
+        },
+        {
+          "name": "Automatické uvažování",
+          "textId": "automaticke-uvazovani",
+          "isDefinition": true
+        },
+        {
+          "name": "Automatické dokazování",
+          "textId": "automaticke-dokazovani",
+          "isDefinition": true
+        },
+        {
+          "name": "Kontrola modelů",
+          "textId": "kontrola-modelu",
+          "isDefinition": true
+        },
+        {
+          "name": "Hledání modelů",
+          "textId": "hledani-modelu",
+          "isDefinition": true
+        },
+        {
+          "name": "Interaktivní systémy",
+          "textId": "interaktivni-systemy",
+          "isDefinition": true
+        },
+        {
+          "name": "Automatické systémy",
+          "textId": "automaticke-systemy",
+          "isDefinition": true
+        }
+      ],
+      "textId": "uvod"
+    },
+    {
+      "depth": 2,
+      "line": 68,
+      "name": "Rezoluční kalkulus pro výrokovou logiku",
+      "children": [
+        {
+          "name": "Interpretace",
+          "textId": "interpretace",
+          "isDefinition": true
+        },
+        {
+          "name": "Model",
+          "textId": "model",
+          "isDefinition": true
+        },
+        {
+          "name": "Sémantický důsledek",
+          "textId": "semanticky-dusledek",
+          "isDefinition": true
+        },
+        {
+          "name": "Tautologie",
+          "textId": "tautologie",
+          "isDefinition": true
+        },
+        {
+          "name": "Kontradikce",
+          "textId": "kontradikce",
+          "isDefinition": true
+        },
+        {
+          "name": "Sporná množina",
+          "textId": "sporna-mnozina",
+          "isDefinition": true
+        },
+        {
+          "name": "Logický kalkulus",
+          "textId": "logicky-kalkulus",
+          "isDefinition": true
+        },
+        {
+          "name": "Důkaz",
+          "textId": "dukaz",
+          "isDefinition": true
+        },
+        {
+          "name": "Dokazatelnost",
+          "textId": "dokazatelnost",
+          "isDefinition": true
+        },
+        {
+          "name": "Hilbertův implikativní kalkulus pro výrokovou logiku",
+          "textId": "hilbertuv-implikativni-kalkulus-pro-vyrokovou-logiku",
+          "isDefinition": true
+        },
+        {
+          "name": "Korektnost logického kalkulu",
+          "textId": "korektnost-logickeho-kalkulu",
+          "isDefinition": true
+        },
+        {
+          "name": "Úplnost logického kalkulu",
+          "textId": "uplnost-logickeho-kalkulu",
+          "isDefinition": true
+        },
+        {
+          "name": "Rezoluční kalkulus",
+          "textId": "rezolucni-kalkulus",
+          "isDefinition": true
+        },
+        {
+          "name": "Literál",
+          "textId": "literal",
+          "isDefinition": true
+        },
+        {
+          "name": "Klauzule",
+          "textId": "klauzule",
+          "isDefinition": true
+        },
+        {
+          "name": "Prázdná klauzule",
+          "textId": "prazdna-klauzule",
+          "isDefinition": true
+        },
+        {
+          "name": "Věta (o úplnosti rezolučního kalkulu)",
+          "textId": "veta-o-uplnosti-rezolucniho-kalkulu",
+          "isDefinition": true
+        },
+        {
+          "name": "Metoda důkazu sporem",
+          "textId": "metoda-dukazu-sporem",
+          "isDefinition": true
+        },
+        {
+          "name": "Strategie aplikace rezolučního pravidla",
+          "textId": "strategie-aplikace-rezolucniho-pravidla",
+          "isDefinition": true
+        },
+        {
+          "name": "Optimalizace konverze na CNF",
+          "textId": "optimalizace-konverze-na-cnf",
+          "isDefinition": true
+        },
+        {
+          "name": "Subsumpce",
+          "textId": "subsumpce",
+          "isDefinition": true
+        },
+        {
+          "name": "Subsumpce v rezoluci",
+          "textId": "subsumpce-v-rezoluci",
+          "isDefinition": true
+        },
+        {
+          "name": "Dopředná subsumpce",
+          "textId": "dopredna-subsumpce",
+          "isDefinition": true
+        },
+        {
+          "name": "Zpětná subsumpce",
+          "textId": "zpetna-subsumpce",
+          "isDefinition": true
+        },
+        {
+          "name": "Uspořádaná rezoluce",
+          "textId": "usporadana-rezoluce",
+          "isDefinition": true
+        },
+        {
+          "name": "Kvaziuspořádání",
+          "textId": "kvaziusporadani",
+          "isDefinition": true
+        },
+        {
+          "name": "Lineární uspořádání",
+          "textId": "linearni-usporadani",
+          "isDefinition": true
+        },
+        {
+          "name": "Úplnost uspořádané rezoluce",
+          "textId": "uplnost-usporadane-rezoluce",
+          "isDefinition": true
+        }
+      ],
+      "textId": "rezolucni-kalkulus-pro-vyrokovou-logiku"
+    },
+    {
+      "depth": 2,
+      "line": 215,
+      "name": "Rezoluční kalkulus pro logiku prvního řádu",
+      "textId": "rezolucni-kalkulus-pro-logiku-prvniho-radu"
+    },
+    {
+      "depth": 2,
+      "line": 217,
+      "name": "Tableaux metody",
+      "children": [
+        {
+          "depth": 3,
+          "line": 239,
+          "name": "Tableau pravidla pro predikátovou logiku",
+          "children": [
+            {
+              "name": "konjuknce",
+              "textId": "konjuknce",
+              "isDefinition": true
+            },
+            {
+              "name": "disjunkce",
+              "textId": "disjunkce",
+              "isDefinition": true
+            },
+            {
+              "name": "negace",
+              "textId": "negace",
+              "isDefinition": true
+            },
+            {
+              "name": "univerzální kvantifikace",
+              "textId": "univerzalni-kvantifikace",
+              "isDefinition": true
+            },
+            {
+              "name": "existenční kvantifikace",
+              "textId": "existencni-kvantifikace",
+              "isDefinition": true
+            },
+            {
+              "name": "uzavření větve",
+              "textId": "uzavreni-vetve",
+              "isDefinition": true
+            },
+            {
+              "name": "uzavřené tableau",
+              "textId": "uzavrene-tableau",
+              "isDefinition": true
+            },
+            {
+              "name": "LeanTAP",
+              "textId": "leantap",
+              "isDefinition": true
+            }
+          ],
+          "textId": "tableau-pravidla-pro-predikatovou-logiku"
+        },
+        {
+          "name": "Tableau metoda",
+          "textId": "tableau-metoda",
+          "isDefinition": true
+        },
+        {
+          "name": "Negation normal form",
+          "textId": "negation-normal-form",
+          "isDefinition": true
+        }
+      ],
+      "textId": "tableaux-metody"
+    },
+    {
+      "depth": 2,
+      "line": 274,
+      "name": "DPLL a metody pro SAT",
+      "children": [
+        {
+          "name": "SAT",
+          "textId": "sat",
+          "isDefinition": true
+        },
+        {
+          "name": "DPLL",
+          "textId": "dpll",
+          "isDefinition": true
+        },
+        {
+          "name": "unit clause",
+          "textId": "unit-clause",
+          "isDefinition": true
+        },
+        {
+          "name": "unit propagation",
+          "textId": "unit-propagation",
+          "isDefinition": true
+        },
+        {
+          "name": "pure výskyt",
+          "textId": "pure-vyskyt",
+          "isDefinition": true
+        },
+        {
+          "name": "pure literal elimination",
+          "textId": "pure-literal-elimination",
+          "isDefinition": true
+        },
+        {
+          "name": "MiniSat",
+          "textId": "minisat",
+          "isDefinition": true
+        },
+        {
+          "name": "MiniSat – analýza konfliktu",
+          "textId": "minisat-analyza-konfliktu",
+          "isDefinition": true
+        }
+      ],
+      "textId": "dpll-a-metody-pro-sat"
+    }
+  ],
+  "textId": "automaticke-uvazovani"
+}

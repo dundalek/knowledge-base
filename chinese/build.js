@@ -4,6 +4,7 @@ var fs = require('fs'),
     KMDoc = require('../kmdoc.common'),
     kmd = KMDoc.create({
         componentsPath:'../../components/',
+        fileIn: '../kb/chinese.md',
         basename: 'out/chinese',
         title: 'Chinese notes'
     });

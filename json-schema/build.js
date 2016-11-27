@@ -1,5 +1,7 @@
 var kmd = require('../kmdoc.common').create({
-    title: 'JSON Schema'
+    title: 'JSON Schema',
+    fileIn: '../kb/json-schema.md',
+    basename: 'index',
 });
 
 kmd.use('recall', 'autolink', 'tooltip', 'search', 'toc', 'shortsource');

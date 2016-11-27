@@ -1,1 +1,239 @@
-{"depth":1,"lines":[1,2],"name":"Multi-Agent Systems","children":[{"name":"","depth":2,"children":[{"depth":3,"lines":[11,12],"name":"Autonomous Agent Properties","children":[{"name":"autonomous","textId":"autonomous","isDefinition":true},{"name":"reactive","textId":"reactive","isDefinition":true},{"name":"proactive","textId":"proactive","isDefinition":true},{"name":"sociable","textId":"sociable","isDefinition":true},{"name":"coordination","textId":"coordination","isDefinition":true},{"name":"cooperation","textId":"cooperation","isDefinition":true},{"name":"negotiation","textId":"negotiation","isDefinition":true}],"textId":"autonomous-agent-properties"},{"depth":3,"lines":[40,41],"name":"Types of Agent Systems","textId":"types-of-agent-systems"},{"depth":3,"lines":[47,48],"name":"Agent Behavior","textId":"agent-behavior"},{"depth":3,"lines":[63,64],"name":"Properties of Environments","textId":"properties-of-environments"},{"depth":3,"lines":[83,84],"name":"Hierarchy of Agents","textId":"hierarchy-of-agents"},{"depth":3,"lines":[138,139],"name":"Summary","textId":"summary"}]},{"depth":2,"lines":[149,150],"name":"Auctions","children":[{"depth":3,"lines":[155,156],"name":"Auctions Rules","children":[{"name":"Bidding rules","textId":"bidding-rules","isDefinition":true},{"name":"Clearing rules","textId":"clearing-rules","isDefinition":true},{"name":"Information rules","textId":"information-rules","isDefinition":true}],"textId":"auctions-rules"},{"depth":3,"lines":[168,169],"name":"Valuation Models","children":[{"name":"Common value","textId":"common-value","isDefinition":true},{"name":"Private value","textId":"private-value","isDefinition":true},{"name":"Correlated value","textId":"correlated-value","isDefinition":true},{"name":"Agent’s payoff from participating in an auction","textId":"agent-s-payoff-from-participating-in-an-auction","isDefinition":true}],"textId":"valuation-models"},{"depth":3,"lines":[182,183],"name":"Auction types","children":[{"name":"Single Good Auctions","textId":"single-good-auctions","isDefinition":true},{"name":"Multi-Unit Auctions","textId":"multi-unit-auctions","isDefinition":true},{"name":"Multi-Item Auctions","textId":"multi-item-auctions","isDefinition":true},{"name":"Reverse Auctions","textId":"reverse-auctions","isDefinition":true},{"name":"Multi-Attribute Auctions","textId":"multi-attribute-auctions","isDefinition":true}],"textId":"auction-types"},{"depth":3,"lines":[199,200],"name":"Single-Item Auctions - Basic Auction Mechanisms","children":[{"name":"English Auction","textId":"english-auction","isDefinition":true},{"name":"Japanese Auction","textId":"japanese-auction","isDefinition":true},{"name":"Dutch Auction","textId":"dutch-auction","isDefinition":true},{"name":"First-price sealed bid auction","textId":"first-price-sealed-bid-auction","isDefinition":true},{"name":"Second-price sealed bid auction","textId":"second-price-sealed-bid-auction","isDefinition":true}],"textId":"single-item-auctions-basic-auction-mechanisms"},{"depth":3,"lines":[222,223],"name":"Analysing Auctions","textId":"analysing-auctions"},{"depth":3,"lines":[238,239],"name":"Dutch and First-price Sealed Bid","textId":"dutch-and-first-price-sealed-bid"},{"name":"Auction","textId":"auction","isDefinition":true}],"textId":"auctions"},{"name":"Multiagent system","textId":"multiagent-system","isDefinition":true},{"name":"Agent","textId":"agent","isDefinition":true}],"textId":"multi-agent-systems"}
+{
+  "depth": 1,
+  "line": 1,
+  "name": "Multi-Agent Systems",
+  "children": [
+    {
+      "name": "",
+      "depth": 2,
+      "children": [
+        {
+          "depth": 3,
+          "line": 11,
+          "name": "Autonomous Agent Properties",
+          "children": [
+            {
+              "name": "autonomous",
+              "textId": "autonomous",
+              "isDefinition": true
+            },
+            {
+              "name": "reactive",
+              "textId": "reactive",
+              "isDefinition": true
+            },
+            {
+              "name": "proactive",
+              "textId": "proactive",
+              "isDefinition": true
+            },
+            {
+              "name": "sociable",
+              "textId": "sociable",
+              "isDefinition": true
+            },
+            {
+              "name": "coordination",
+              "textId": "coordination",
+              "isDefinition": true
+            },
+            {
+              "name": "cooperation",
+              "textId": "cooperation",
+              "isDefinition": true
+            },
+            {
+              "name": "negotiation",
+              "textId": "negotiation",
+              "isDefinition": true
+            }
+          ],
+          "textId": "autonomous-agent-properties"
+        },
+        {
+          "depth": 3,
+          "line": 40,
+          "name": "Types of Agent Systems",
+          "textId": "types-of-agent-systems"
+        },
+        {
+          "depth": 3,
+          "line": 47,
+          "name": "Agent Behavior",
+          "textId": "agent-behavior"
+        },
+        {
+          "depth": 3,
+          "line": 63,
+          "name": "Properties of Environments",
+          "textId": "properties-of-environments"
+        },
+        {
+          "depth": 3,
+          "line": 83,
+          "name": "Hierarchy of Agents",
+          "textId": "hierarchy-of-agents"
+        },
+        {
+          "depth": 3,
+          "line": 138,
+          "name": "Summary",
+          "textId": "summary"
+        }
+      ]
+    },
+    {
+      "depth": 2,
+      "line": 149,
+      "name": "Auctions",
+      "children": [
+        {
+          "depth": 3,
+          "line": 155,
+          "name": "Auctions Rules",
+          "children": [
+            {
+              "name": "Bidding rules",
+              "textId": "bidding-rules",
+              "isDefinition": true
+            },
+            {
+              "name": "Clearing rules",
+              "textId": "clearing-rules",
+              "isDefinition": true
+            },
+            {
+              "name": "Information rules",
+              "textId": "information-rules",
+              "isDefinition": true
+            }
+          ],
+          "textId": "auctions-rules"
+        },
+        {
+          "depth": 3,
+          "line": 168,
+          "name": "Valuation Models",
+          "children": [
+            {
+              "name": "Common value",
+              "textId": "common-value",
+              "isDefinition": true
+            },
+            {
+              "name": "Private value",
+              "textId": "private-value",
+              "isDefinition": true
+            },
+            {
+              "name": "Correlated value",
+              "textId": "correlated-value",
+              "isDefinition": true
+            },
+            {
+              "name": "Agent’s payoff from participating in an auction",
+              "textId": "agent-s-payoff-from-participating-in-an-auction",
+              "isDefinition": true
+            }
+          ],
+          "textId": "valuation-models"
+        },
+        {
+          "depth": 3,
+          "line": 182,
+          "name": "Auction types",
+          "children": [
+            {
+              "name": "Single Good Auctions",
+              "textId": "single-good-auctions",
+              "isDefinition": true
+            },
+            {
+              "name": "Multi-Unit Auctions",
+              "textId": "multi-unit-auctions",
+              "isDefinition": true
+            },
+            {
+              "name": "Multi-Item Auctions",
+              "textId": "multi-item-auctions",
+              "isDefinition": true
+            },
+            {
+              "name": "Reverse Auctions",
+              "textId": "reverse-auctions",
+              "isDefinition": true
+            },
+            {
+              "name": "Multi-Attribute Auctions",
+              "textId": "multi-attribute-auctions",
+              "isDefinition": true
+            }
+          ],
+          "textId": "auction-types"
+        },
+        {
+          "depth": 3,
+          "line": 199,
+          "name": "Single-Item Auctions - Basic Auction Mechanisms",
+          "children": [
+            {
+              "name": "English Auction",
+              "textId": "english-auction",
+              "isDefinition": true
+            },
+            {
+              "name": "Japanese Auction",
+              "textId": "japanese-auction",
+              "isDefinition": true
+            },
+            {
+              "name": "Dutch Auction",
+              "textId": "dutch-auction",
+              "isDefinition": true
+            },
+            {
+              "name": "First-price sealed bid auction",
+              "textId": "first-price-sealed-bid-auction",
+              "isDefinition": true
+            },
+            {
+              "name": "Second-price sealed bid auction",
+              "textId": "second-price-sealed-bid-auction",
+              "isDefinition": true
+            }
+          ],
+          "textId": "single-item-auctions-basic-auction-mechanisms"
+        },
+        {
+          "depth": 3,
+          "line": 222,
+          "name": "Analysing Auctions",
+          "textId": "analysing-auctions"
+        },
+        {
+          "depth": 3,
+          "line": 238,
+          "name": "Dutch and First-price Sealed Bid",
+          "textId": "dutch-and-first-price-sealed-bid"
+        },
+        {
+          "name": "Auction",
+          "textId": "auction",
+          "isDefinition": true
+        }
+      ],
+      "textId": "auctions"
+    },
+    {
+      "name": "Multiagent system",
+      "textId": "multiagent-system",
+      "isDefinition": true
+    },
+    {
+      "name": "Agent",
+      "textId": "agent",
+      "isDefinition": true
+    }
+  ],
+  "textId": "multi-agent-systems"
+}

@@ -1,6 +1,8 @@
 var kmd = require('../kmdoc.common').create({
     title: 'Automaticke Uvazovani',
-    lang: 'cs_CZ'
+    lang: 'cs_CZ',
+    fileIn: '../kb/automaticke-uvazovani.md',
+    basename: 'index',
 });
 
 kmd.use({'mindmap': {autoOpen: false, out: 'index-mindmap.json'}}, 'shortsource', 'toc', 'columns', 'tooltip', 'math', 'recall', 'autolink', 'search', 'flashcard');

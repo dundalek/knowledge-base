@@ -5,7 +5,7 @@ This repository contains knowledge represented using KMDoc software. The goal is
 You can browse online versions of:
 
 - [Chinese Notes](http://kb.knomaton.org/chinese/out/chinese.html)
-- [Graph Theory glossary](http://kb.knomaton.org/graph-theory/graph-theory.html)
+- [Graph Theory glossary](http://kb.knomaton.org/graph-theory/)
 - [Multi-Agent Systems](http://kb.knomaton.org/multi-agent-systems/)
 - [JSON Schema rererence](http://kb.knomaton.org/json-schema/)
 - [Automatické Uvažování (Automated Reasoning, available only in czech)](http://kb.knomaton.org/automaticke-uvazovani/)
