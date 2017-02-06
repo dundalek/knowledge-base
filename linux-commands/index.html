@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>Linux Commands</title><link rel="stylesheet" href="../components/bootstrap/css/bootstrap.css"/><link rel="stylesheet" href="../components/kmdoc/assets/css/style.css"/><link rel="stylesheet" href="../components/kmdoc/assets/jquery-bootstrap/jquery-ui-1.9.2.custom.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="../components/jquery-ui/ui/jquery-ui.js"></script><script src="../components/underscore/underscore.js"></script><script src="../components/kmdoc/assets/js/main.js"></script><script src="../components/kmdoc/assets/js/recall.js"></script><script src="../components/kmdoc/assets/js/autolink.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/Among.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/SnowballProgram.js"></script><script src="../components/kmdoc/assets/libs/snowball-js/stemmer/src/ext/EnglishStemmer.js"></script><script>KMDoc.modules.autolink.options.stem = (function() {var stemmer = new EnglishStemmer(); return function(str) {stemmer.setCurrent(str.toLowerCase()); stemmer.stem(); return stemmer.getCurrent();}})(); </script><script src="../components/kmdoc/assets/js/tooltip.js"></script><script src="../components/kmdoc/assets/libs/latinize/latinize.js"></script><script src="../components/kmdoc/assets/js/search.js"></script><link rel="stylesheet" href="../components/kmdoc/assets/css/toc.css"/><script src="../components/kmdoc/assets/libs/jquery.toc.js"></script><script>$(function() {$("body").append("<div id=\"toc\"></div>").css("margin-right", 160); $("#toc").css("right", 0).toc({offset:-40});});</script><script>KMDoc.definitionsUrl = "index-definitions.json";</script>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><a class="brand" href="#">Linux Commands</a><ul class="nav"><li class="divider-vertical"></li><li><a href="../">KMDoc Knowledge Base</a></li></ul><div class="control-toolbar"></div></div></div>
+
+<h2 id="pdf-utils">PDF utils</h2>
+<div class="definition" id="pdf-gui"><dt>PDF GUI</dt><dd>pdfchain</dd></div>
+
+
+<div class="definition" id="convert-jpg-files-to-pdf"><dt>Convert JPG files to PDF</dt><dd>convert {{infiles}} {{outfile}}</dd></div>
+
+
+<div class="definition" id="join-pdfs-to-single-file"><dt>Join PDFs to single file</dt><dd>pdftk {{infiles}} cat output {{outfile}}</dd></div>
+
+
+<div class="definition" id="extract-images-from-pdf"><dt>Extract images from PDF</dt><dd>pdfimages -j {{infile}} {{basename}}</dd></div>
+
+<h2 id="network">Network</h2>
+<div class="definition" id="turn-on-interface"><dt>Turn on interface</dt><dd>ifconfig {{iface}} {{ip}}  netmask {{mask}} up</dd></div>
+
+
+<div class="definition" id="turn-off-interface"><dt>Turn off interface</dt><dd>ifconfig {{iface}} down</dd></div>
+
+
+<div class="definition" id="setup-gateway"><dt>Setup gateway</dt><dd>route add default gw {{adress}}</dd></div>
+
+
+<div class="definition" id="set-mac-address"><dt>Set MAC address</dt><dd>ifconfig {{iface}} hw ether {{mac}}</dd></div>
+
+
+<div class="definition" id="list-wifi-networks"><dt>List WiFi networks</dt><dd>iwlist {{wiface}} scan</dd></div>
+
+<h2 id="disk-utils">Disk utils</h2>
+<div class="definition" id="empty-disk-caches"><dt>Empty disk caches</dt><dd>sync ; echo 3 &gt; /proc/sys/vm/drop_caches;</dd></div>
+
+
+<div class="definition" id="empty-swap"><dt>Empty swap</dt><dd>swapoff {{swapfile}}; swapon {{swapfile}}</dd></div>
+
+
+<div class="definition" id="list-disk-paritions"><dt>List disk paritions</dt><dd>fdisk -l {{disk}}</dd></div>
+
+
+<div class="definition" id="partition-editor"><dt>Partition editor</dt><dd>cfdisk {{disk}}</dd></div>
+
+
+<div class="definition" id="set-partition-label"><dt>Set partition label</dt><dd>e2label {{partition}} {{label}}</dd></div>
+
+
+<div class="definition" id="print-partition-block-size"><dt>Print partition block size</dt><dd>tune2fs -l {{partition}} | grep -i &#39;block size&#39;</dd></div>
+
+
+<div class="definition" id="set-number-of-reserved-blocks-in-partition"><dt>Set number of reserved blocks in partition</dt><dd>tune2fs -r {{blocknum}} {{partition}}</dd></div>
+
+
+<div class="definition" id="get-rid-of-message-give-root-password-for-maintenance-or-type-control-d-to-continue"><dt>Get rid of message: &quot;Give root password for maintenance (or type Control D to continue)&quot;</dt><dd>tune2fs -j -e continue {{partition}}</dd></div>
+
+<h2 id="debian">Debian</h2>
+<div class="definition" id="set-which-java-version-to-use"><dt>Set which JAVA version to use</dt><dd>update-alternatives --config java; update-alternatives --config javac</dd></div>
+
+
+<div class="definition" id="set-which-services-in-init-d-to-run"><dt>Set which services in init.d to run</dt><dd>sysv-rc-conf</dd></div>
+
+
+<div class="definition" id="print-number-of-installed-packages"><dt>Print number of installed packages</dt><dd>qlist -I | wc -l</dd></div>
+
+
+<div class="definition" id="create-deb-package-from-sources"><dt>Create deb package from sources</dt><dd>./configure; make; sudo checkinstall -D make install</dd></div>
+
+
+<div class="definition" id="show-version-of-debian-ubuntu"><dt>Show version of Debian/Ubuntu</dt><dd>lsb_release -a</dd></div>
+
+<h2 id="bash">Bash</h2>
+<div class="definition" id="transform-string-to-lowercase"><dt>Transform string to lowercase</dt><dd>echo {{string}} | tr &quot;[:upper:]&quot; &quot;[:lower:]&quot;</dd></div>
+
+<h2 id="misc">Misc</h2>
+<div class="definition" id="run-webserver-in-a-current-directory"><dt>Run webserver in a current directory</dt><dd>python -m SimpleHTTPServer</dd></div>
+
+
+<div class="definition" id="watch-directory-for-changes"><dt>Watch directory for changes</dt><dd>while true; do inotifywait -e modify -e move -e create -e delete -r {{dir}}; {{action}}; done</dd></div>
+
+
+<div class="definition" id="print-disk-usage"><dt>Print disk usage</dt><dd>du -shc {{dir}}</dd></div>
+
+
+<div class="definition" id="finding-files-by-inode-number"><dt>Finding files by inode number</dt><dd>find / -inum {{inode_number}}</dd></div>
+
+
+<div class="definition" id="mount-iso-file"><dt>Mount ISO file</dt><dd>mount -o loop -t iso9660 {{isofile}} {{mountpoint}}</dd></div>
+
+
+<div class="definition" id="fix-fn-keys-for-apple-keyboard"><dt>Fix FN keys for Apple keyboard</dt><dd>echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode</dd></div>
+
+<h2 id="git">Git</h2>
+<div class="definition" id="run-merge-tool"><dt>Run merge tool</dt><dd>git mergetool -t {{mergetool}}</dd></div>
+
+
+</body>
+</html>
