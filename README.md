@@ -11,3 +11,15 @@ You can browse online versions of:
 - [Automatické Uvažování (Automated Reasoning, available only in czech)](http://kb.knomaton.org/automaticke-uvazovani/)
 
 Check out the source code of the [knowledge files](https://github.com/dundalek/knowledge-base) and  [kmdoc](https://github.com/dundalek/kmdoc) which powers this site.
+
+## Build instructions
+
+To build the resulting files yourself you can run following commands:
+
+```sh
+git clone --recursive https://github.com/dundalek/knowledge-base.git
+cd components/kmdoc
+npm install
+cd ../..
+./build.sh
+```
