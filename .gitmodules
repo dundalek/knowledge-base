@@ -1,6 +1,6 @@
 [submodule "components/kmdoc"]
 	path = components/kmdoc
-	url = git://github.com/knomaton/kmdoc.git
+	url = git://github.com/dundalek/kmdoc.git
 [submodule "components/pinyin.js"]
 	path = components/pinyin.js
 	url = git://github.com/hotoo/pinyin.js
